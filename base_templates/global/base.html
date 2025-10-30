@@ -1,15 +1,16 @@
-{% load static %}
 <!DOCTYPE hmtl>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{% static 'global/css/style.css' %}">
-    <title>Document</title>
+    {% include 'C:\Users\isacs\OneDrive\Área de Trabalho\ISAIAS\Projetos\agenda_Django25\base_templates\global\partials\_head.html' %}
 </head>
 <body>
+    {% include 'C:\Users\isacs\OneDrive\Área de Trabalho\ISAIAS\Projetos\agenda_Django25\base_templates\global\partials\_header.html' %}
+
     <main class="content">
         {% block content %}{%  endblock content %}
+        {% include 'C:\Users\isacs\OneDrive\Área de Trabalho\ISAIAS\Projetos\agenda_Django25\base_templates\global\partials\_pagination.html' %}
     </main>
+
+    
 </body>
 </html>
